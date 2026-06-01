@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A lightweight calculator that splits shared expenses and exports totals." />
+  <title>Local Expense Split Calculator Tool</title>
+  
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; background: #fafafa; color: #222; }
+    .card { max-width: 780px; margin: 0 auto; background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.08); }
+    .row { display: flex; gap: 8px; margin: 12px 0; }
+    input { flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 8px; }
+    button { padding: 10px 14px; border: none; border-radius: 8px; background: #0a7; color: #fff; cursor: pointer; }
+    .awe-ad-slot { text-align: center; padding: 15px; margin: 20px 0; background: #f0f0f0; color: #888; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <!-- AI-GENERATED: Autonomous Wealth Engine -->
+  <div class="card">
+    <h1>Local Expense Split Calculator Tool</h1>
+    <p>A lightweight calculator that splits shared expenses and exports totals.</p>
+    <div class="awe-ad-slot">[ Advertisement Placeholder ]</div>
+    <div class="row">
+      <input id="a" type="number" placeholder="Value A" />
+      <input id="b" type="number" placeholder="Value B" />
+      <button onclick="calc()">Calculate</button>
+    </div>
+    <p id="out">Result: —</p>
+    <div class="awe-ad-slot">[ Advertisement Placeholder ]</div>
+    <footer>Built with ❤️ | AI-generated tool</footer>
+  </div>
+  <script>
+    function calc() {
+      const a = parseFloat(document.getElementById('a').value || '0');
+      const b = parseFloat(document.getElementById('b').value || '0');
+      const sum = (a + b).toFixed(2);
+      const diff = (a - b).toFixed(2);
+      document.getElementById('out').textContent = `Result: sum=${sum}, diff=${diff}`;
+    }
+  </script>
+</body>
+</html>
